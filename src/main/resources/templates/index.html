@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="demo">
+    <head>
+      <title> Simple Spring Rest App</title>
+      <link rel="stylesheet" href="bootstrap.min.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+      <script src="controller.js"></script>
+    </head>
+
+    <body>
+
+      <div class="jumbotron">
+    <div class="container" ng-controller="Login">
+        <div>
+          <label for="user">Username </label>
+          <input name="user" ng-model='userName'> </input>
+        </div>
+        <br><br>
+        <div>
+          <label for="pass">Password </label>
+          <input name ="pass" ng-model='password'> </input>
+          <br>
+          <br>
+          <button ng-click='checkLogin(userName)'> Login </button>
+        </div>
+    </div>
+</div>
+    </body>
+</html>
